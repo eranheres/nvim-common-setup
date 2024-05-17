@@ -1,15 +1,10 @@
 # General nvim setup (not IDE) 
 
 ## setup
-autocmd.lua:
-require("common.config.common-autocmds")
-
-keymap.lua:
-require("common.config.common-keymaps")
-
-common.lua:
-return { require("common.plugins.all") }
-
+To setup on an new nvim environment just run the following script (repace the nvim-env-name with the nvim):
+```bash
+curl -sL https://raw.githubusercontent.com/eranheres/nvim-common-setup/main/setup.sh | bash -s <nvim-env-name> 
+```
 
 ## TODO:
 - [ ] create a repo to sync all the common plugins between nvims
