@@ -1,10 +1,6 @@
 # General nvim setup (not IDE) 
 
-
 ## setup
-a change 2
-
-
 autocmd.lua:
 require("common.config.common-autocmds")
 

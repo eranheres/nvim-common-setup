@@ -1,10 +1,8 @@
 #/bin/zsh
-# echo on
-set -x
 
 ## Verfiy first parameter is the name of the nvim
 if [ -z $1 ]; then
-    echo "Please provide the name of the nvim"
+    echo "[-] Please provide the name of the nvim"
     exit 1
 fi
 
@@ -12,12 +10,12 @@ nvimenv=$1
 echo "setting to: $nvimenv"
 ## Verify tha the nvim folder exists
 if [ ! -d ~/.config/$nvimenv ]; then
-    echo "The nvim folder does not exist"
+    echo "[-] The nvim folder does not exist"
     exit 1
 fi
 
 if [ -d ~/.config/$nvimenv/lua/common ]; then
-    echo "The folder exists"
+    echo "[-] The folder exists"
     exit 1
 fi
 
@@ -39,3 +37,6 @@ add_line_to_file 'require("common.config.common-keymaps")' ~/.config/$nvimenv/lu
 ##common.lua:
 echo 'return { require("common.plugins.all") }' > ~/.config/$nvimenv/lua/plugins/common.lua
 
+cp ~/.config/$nvimenv/lua/common/init_lua ~/.config/$nvimenv/init.lua
+
+echo [+] Done
