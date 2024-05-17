@@ -1,5 +1,5 @@
 #/bin/zsh
-
+set -e
 ## Verfiy first parameter is the name of the nvim
 if [ -z $1 ]; then
     echo "[-] Please provide the name of the nvim"
