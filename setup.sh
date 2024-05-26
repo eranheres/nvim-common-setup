@@ -21,7 +21,6 @@ fi
 
 ## Clone the repo to the common folder under the nvim env
 git clone https://github.com/eranheres/nvim-common-setup ~/.config/$nvimenv/lua/common
-
 # function to add line to file if the line does not exists
 # $1: line to add
 # $2: file to add to
@@ -31,6 +30,7 @@ add_line_to_file(){
 
 ## Setup require statements
 ## autocmd.lua:
+add_line_to_file 'lua/common' ~/.config/$nvimenv/.gitignore
 add_line_to_file 'require("common.config.common-autocmds")' ~/.config/$nvimenv/lua/config/autocmds.lua
 add_line_to_file 'require("common.config.common-keymaps")' ~/.config/$nvimenv/lua/config/keymaps.lua
 

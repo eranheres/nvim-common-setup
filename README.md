@@ -7,22 +7,24 @@ curl -sL https://raw.githubusercontent.com/eranheres/nvim-common-setup/main/setu
 ```
 
 ## TODO:
-- [ ] create a repo to sync all the common plugins between nvims
-- [ ] set autosession like in nvim-ios to common
-- [ ] check how to create projects (or search the sessions history)
+- [ ] check which options to copy fron nvim-ios to common-setup
+- [ ] move the chatgpt setup from nvim-ios to common-setup
+- [ ] make auto command to restore the session on startup 
 - [ ] add harpoon to common
 - [ ] create nvim setup for obsidian
 - [ ] check fidget addon (like in nvim-ios)
 - [ ] read about the trouble plugin
-- [ ] check if to use the autosession plugin that is in vim-ios instead
 - [ ] check the Obsidian plugin
 - [ ] set the borders of splits (different colors)
 - [ ] setup other IDEs with copilot 
 - [ ] set the actions.json file in ChatGPT to include the vim expert
 - [ ] checkout the codi.vim plugin
+- [ ] check how to create projects (or search the sessions history)
  
 
 ## Done:
+- [x] create a repo to sync all the common plugins between nvims
+- [x] set autosession like in nvim-ios to common
 - [x] create nvim setup for neovim develpment (located on nvim-lua including example of a setup)
 
 - [x] autosession or use the built in Session command (autosession and sessionlens)

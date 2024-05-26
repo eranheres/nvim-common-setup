@@ -27,8 +27,8 @@ map({ "n", "v" }, "<leader>pr", "<cmd>ChatGPTRun roxygen_edit<cr>", { desc = "Ro
 map({ "n", "v" }, "<leader>pl", "<cmd>ChatGPTRun code_readability_analysis<cr>", { desc = "Code readability analysis" })
 
 local prompt =
-  "You are a neovim expert. You know everything about use of commands and lua and can provide the exact nvim command to do things I ask. Always provide only the command that seems most relevant and the command only."
+	"You are a neovim expert. You know everything about use of commands and lua and can provide the exact nvim command to do things I ask. Always provide only the command that seems most relevant and the command only."
 map({ "n", "v" }, "<leader>pn", '<cmd>ChatGPT "' .. prompt .. '"<cr>', { desc = "Nvim helper" })
 
--- Autosession
---map({ "n", "v" }, "<leader>fs", require("auto-session.session-lens").search_session, { desc = "Search session" })
+-- Debug
+map({ "n" }, "<F5>", '<Cmd>lua require("dap").step_over()<CR>', { desc = "debug step over" })
