@@ -31,4 +31,7 @@ local prompt =
 map({ "n", "v" }, "<leader>pn", '<cmd>ChatGPT "' .. prompt .. '"<cr>', { desc = "Nvim helper" })
 
 -- Debug
-map({ "n" }, "<F5>", '<Cmd>lua require("dap").step_over()<CR>', { desc = "debug step over" })
+map({ "n" }, "<F5>", '<Cmd>lua require("dap").continue()<CR>', { desc = "debug start" })
+map({ "n" }, "<F6>", '<Cmd>lua require("dap").step_over()<CR>', { desc = "debug step over" })
+map({ "n" }, "<F7>", '<Cmd>lua require("dap").step_into()<CR>', { desc = "debug step into" })
+map({ "n" }, "<F2>", '<Cmd>lua require("dap").terminate()<CR>', { desc = "debug terminate" })
