@@ -19,8 +19,14 @@ if [ -d ~/.config/$nvimenv/lua/common ]; then
     exit 1
 fi
 
+pushd $(PWD)
+cd ~/.config/$nvimenv
+
 ## Clone the repo to the common folder under the nvim env
-git clone https://github.com/eranheres/nvim-common-setup ~/.config/$nvimenv/lua/common
+git submodule add --force https://github.com/eranheres/nvim-common-setup lua/common
+git submodule update --init --remote
+## git submodule absorbgitdirs
+
 # function to add line to file if the line does not exists
 # $1: line to add
 # $2: file to add to
@@ -30,13 +36,13 @@ add_line_to_file(){
 
 ## Setup require statements
 ## autocmd.lua:
-add_line_to_file 'lua/common' ~/.config/$nvimenv/.gitignore
-add_line_to_file 'require("common.config.common-autocmds")' ~/.config/$nvimenv/lua/config/autocmds.lua
-add_line_to_file 'require("common.config.common-keymaps")' ~/.config/$nvimenv/lua/config/keymaps.lua
+add_line_to_file 'require("common.config.common-autocmds")' lua/config/autocmds.lua
+add_line_to_file 'require("common.config.common-keymaps")' lua/config/keymaps.lua
 
 ##common.lua:
-echo 'return { require("common.plugins.all") }' > ~/.config/$nvimenv/lua/plugins/common.lua
+echo 'return { require("common.plugins.all") }' > lua/plugins/common.lua
 
-cp ~/.config/$nvimenv/lua/common/init_lua ~/.config/$nvimenv/init.lua
+cp lua/common/init_lua init.lua
 
+popd
 echo [+] Done
