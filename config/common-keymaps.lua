@@ -5,8 +5,12 @@ vim.api.nvim_set_keymap("n", "<C-d>", "5<C-d>", { noremap = true, silent = true 
 -- this line is required so the submenu modifications will work
 require("which-key").setup({})
 
--- Toggle terminal
+
 local map = vim.keymap.set
+-- buffers switching
+map("n", "<S-Tab>", "<cmd>b#<cr>", { desc = "Swith prev buffer" })
+
+-- Toggle terminal
 map("n", "<leader>tt", "<cmd>ToggleTerm<cr>", { desc = "Toggle terminal" })
 map("n", "<leader>tv", "<cmd>ToggleTerm direction=vertical<cr>", { desc = "Toggle vertical terminal" })
 map("n", "<leader>tf", "<cmd>ToggleTerm direction=float<cr>", { desc = "Toggle float terminal" })
