@@ -7,6 +7,9 @@ curl -sL https://raw.githubusercontent.com/eranheres/nvim-common-setup/main/setu
 ```
 
 ## TODO:
+- [ ] fix the issue with the error on nvim-a
+- [ ] set the suggestion approval to be <Tab> and nvigation keys
+- [ ] fix the debug session on nvim-ios
 - [ ] check which options to copy fron nvim-ios to common-setup
 - [ ] move the chatgpt setup from nvim-ios to common-setup
 - [ ] make auto command to restore the session on startup 
