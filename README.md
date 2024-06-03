@@ -4,10 +4,14 @@
 To setup on an new nvim environment just run the following script (repace the nvim-env-name with the nvim):
 ```bash
 curl -sL https://raw.githubusercontent.com/eranheres/nvim-common-setup/main/setup.sh | bash -s <nvim-env-name> 
-```
 
+{  asdfadsf  }
+
+```
 ## TODO:
+- [ ] open-close braces annoying behaviour
 - [ ] fix the issue with the error on nvim-a
+- [ ] fix iOS code formatting
 - [ ] set the suggestion approval to be <Tab> and nvigation keys
 - [ ] fix the debug session on nvim-ios
 - [ ] check which options to copy fron nvim-ios to common-setup
@@ -21,6 +25,7 @@ curl -sL https://raw.githubusercontent.com/eranheres/nvim-common-setup/main/setu
 - [ ] set the borders of splits (different colors)
 - [ ] setup other IDEs with copilot 
 - [ ] set the actions.json file in ChatGPT to include the vim expert
+- [ ] check lazy plugin of mini-surrounding
 - [ ] checkout the codi.vim plugin
 - [ ] check how to create projects (or search the sessions history)
  
@@ -44,5 +49,5 @@ curl -sL https://raw.githubusercontent.com/eranheres/nvim-common-setup/main/setu
 
 ## Tips and tricks
 
+- to print path of local env: vim.print(vim.fn.stdpath('data'))  
 - use nmap command to find the actual command that is being used
-- to print the local vim: print(vim.fn.stdpath('data'))  

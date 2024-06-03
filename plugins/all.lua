@@ -1,6 +1,6 @@
 return {
-  require("common.plugins.chatgpt"),
-  --require("common.plugins.autosession"),
-  require("common.plugins.toggleterm"),
-  require("common.plugins.which-key"),
+	require("common.plugins.chatgpt"),
+	require("common.plugins.nvim-autopairs"),
+	require("common.plugins.toggleterm"),
+	require("common.plugins.which-key"),
 }
