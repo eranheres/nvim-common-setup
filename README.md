@@ -4,9 +4,6 @@
 To setup on an new nvim environment just run the following script (repace the nvim-env-name with the nvim):
 ```bash
 curl -sL https://raw.githubusercontent.com/eranheres/nvim-common-setup/main/setup.sh | bash -s <nvim-env-name> 
-
-{  asdfadsf  }
-
 ```
 ## TODO:
 - [ ] open-close braces annoying behaviour
