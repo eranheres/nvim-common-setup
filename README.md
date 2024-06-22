@@ -6,19 +6,21 @@ To setup on an new nvim environment just run the following script (repace the nv
 curl -sL https://raw.githubusercontent.com/eranheres/nvim-common-setup/main/setup.sh | bash -s <nvim-env-name> 
 ```
 ## TODO:
+
+#### general
 - [ ] open-close braces annoying behaviour
-- [ ] fix the issue with the error on nvim-a
-- [ ] fix iOS code formatting
-- [ ] set the suggestion approval to be <Tab> and nvigation keys
+
+#### obsidian
+- [ ] create nvim setup for obsidian
+- [ ] check the Obsidian plugin
+
+#### nvim-ios
+- [ ] fix iOS code formatting 
 - [ ] fix the debug session on nvim-ios
 - [ ] check which options to copy fron nvim-ios to common-setup
 - [ ] move the chatgpt setup from nvim-ios to common-setup
-- [ ] make auto command to restore the session on startup 
-- [ ] add harpoon to common
-- [ ] create nvim setup for obsidian
 - [ ] check fidget addon (like in nvim-ios)
 - [ ] read about the trouble plugin
-- [ ] check the Obsidian plugin
 - [ ] set the borders of splits (different colors)
 - [ ] setup other IDEs with copilot 
 - [ ] set the actions.json file in ChatGPT to include the vim expert
@@ -28,6 +30,10 @@ curl -sL https://raw.githubusercontent.com/eranheres/nvim-common-setup/main/setu
  
 
 ## Done:
+- [x] add harpoon to common
+- [x] set the suggestion approval to be <Tab> and nvigation keys
+- [x] make C-K and C-J to browse through iTerm history
+- [x] fix the issue with the error on nvim-a
 - [x] create a repo to sync all the common plugins between nvims
 - [x] set autosession like in nvim-ios to common
 - [x] create nvim setup for neovim develpment (located on nvim-lua including example of a setup)
