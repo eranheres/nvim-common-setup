@@ -5,8 +5,10 @@ vim.api.nvim_set_keymap("n", "<C-d>", "5<C-d>", { noremap = true, silent = true 
 -- this line is required so the submenu modifications will work
 require("which-key").setup({})
 
-
 local map = vim.keymap.set
+-- replace in file
+map("v", "<leader>r", "hy:%s/<C-r>h//gc<left><left><left>", { desc = "Replace in file" })
+
 -- buffers switching
 map("n", "<S-Tab>", "<cmd>b#<cr>", { desc = "Swith prev buffer" })
 
