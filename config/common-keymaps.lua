@@ -12,6 +12,10 @@ map("v", "<leader>r", "hy:%s/<C-r>h//gc<left><left><left>", { desc = "Replace in
 -- buffers switching
 map("n", "<S-Tab>", "<cmd>b#<cr>", { desc = "Swith prev buffer" })
 
+-- windows switching
+map("n", "<Tab>", "<C-w>w", { desc = "Switch windows" })
+
+
 -- Toggle terminal
 map("n", "<leader>tt", "<cmd>ToggleTerm<cr>", { desc = "Toggle terminal" })
 map("n", "<leader>tv", "<cmd>ToggleTerm direction=vertical<cr>", { desc = "Toggle vertical terminal" })
